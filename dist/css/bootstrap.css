@@ -4612,7 +4612,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 8px 15px;
   margin-bottom: 16px;
   list-style: none;
-  background-color: #cccccc;
+  background-color: transparent;
   border-radius: 5px;
 }
 
