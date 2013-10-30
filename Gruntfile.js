@@ -1,5 +1,5 @@
 /* jshint node: true */
-
+// This is a test.
 module.exports = function(grunt) {
   "use strict";
 
@@ -94,7 +94,18 @@ module.exports = function(grunt) {
         },
         src: ['less/theme.less'],
         dest: 'dist/css/<%= pkg.name %>-theme.min.css'
-      }
+      },
+      manta: {
+        src: ['less/manta.less'],
+        dest: 'dist/css/<%= pkg.name %>-manta.css'
+      },
+      manta_min: {
+        options: {
+          compress: true
+        },
+        src: ['less/manta.less'],
+        dest: 'dist/css/<%= pkg.name %>-manta.min.css'
+      },
     },
 
     copy: {
@@ -137,15 +148,23 @@ module.exports = function(grunt) {
     watch: {
       src: {
         files: '<%= jshint.src.src %>',
-        tasks: ['jshint:src', 'qunit']
+        tasks: ['jshint:src', 'qunit', 'jekyll']
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'qunit']
+        tasks: ['jshint:test', 'qunit', 'jekyll']
       },
       recess: {
         files: 'less/*.less',
-        tasks: ['recess']
+        tasks: ['recess', 'jekyll']
+      },
+      includes: {
+        files: '_includes/*.html',
+        tasks: ['jekyll']
+      },
+      pages: {
+        files: './*.html',
+	tasks: ['jekyll']
       }
     }
   });
