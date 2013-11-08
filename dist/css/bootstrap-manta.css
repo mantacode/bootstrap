@@ -7094,8 +7094,20 @@ td.visible-print {
   content: "\e643";
 }
 
-.icon-bulb-manta:before {
+.icon-arrow-connector:before {
   content: "\e642";
+}
+
+.icon-bulb-manta:before {
+  content: "\e644";
+}
+
+.icon-double-bubble:before {
+  content: "\e645";
+}
+
+.icon-tag:before {
+  content: "\e646";
 }
 
 .bg-cool-darker {
@@ -7437,8 +7449,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu.dropdown-onhover {
   font-family: 'icomanta';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/icomanta.eot');
-  src: url('../fonts/icomanta.eot?#iefix') format('embedded-opentype'), url('../fonts/icomanta.woff') format('woff'), url('../fonts/icomanta.ttf') format('truetype'), url('../fonts/icomanta.svg#icomanta') format('svg');
+  src: url('../fonts/icomanta.eot?v=2');
+  src: url('../fonts/icomanta.eot?v=2#iefix') format('embedded-opentype'), url('../fonts/icomanta.woff?v=2') format('woff'), url('../fonts/icomanta.ttf?v=2') format('truetype'), url('../fonts/icomanta.svg?v=2#icomanta') format('svg');
 }
 
 @font-face {
@@ -7447,10 +7459,23 @@ ul.nav li.dropdown:hover > ul.dropdown-menu.dropdown-onhover {
   src: url('../fonts/Vegur-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Vegur-Light.woff') format('woff'), url('../fonts/Vegur-Light.ttf') format('truetype'), url('../fonts/Vegur-Light.svg#Vegur-Light') format('svg');
 }
 
+.btn .icomanta,
 .btn .glyphicon {
-  line-height: 0;
+  vertical-align: inherit;
 }
 
-.btn .icomanta {
-  vertical-align: inherit;
+.icomanta {
+  display: inline-block;
+}
+
+.input-group > .input-group-btn > .btn {
+  height: 28px;
+}
+
+.input-group-lg > .input-group-btn > .btn {
+  height: 41px;
+}
+
+.input-group-sm > .input-group-btn > .btn {
+  height: 30px;
 }
