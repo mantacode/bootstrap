@@ -7486,3 +7486,30 @@ ul.nav li.dropdown:hover > ul.dropdown-menu.dropdown-onhover {
   white-space: nowrap;
   vertical-align: middle;
 }
+
+.columnal-list-2 {
+  padding-left: 0;
+  margin-bottom: 20px;
+  list-style-position: inside;
+  columns: 2;
+  -webkit-columns: 2;
+     -moz-columns: 2;
+}
+
+.columnal-list-3 {
+  padding-left: 0;
+  margin-bottom: 20px;
+  list-style-position: inside;
+  columns: 3;
+  -webkit-columns: 3;
+     -moz-columns: 3;
+}
+
+.columnal-list-4 {
+  padding-left: 0;
+  margin-bottom: 20px;
+  list-style-position: inside;
+  columns: 4;
+  -webkit-columns: 4;
+     -moz-columns: 4;
+}
