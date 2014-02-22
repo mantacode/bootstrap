@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+<title>
+  
+    Manta Components &middot; Bootstrap
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../dist/css/bootstrap-manta.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="../assets/css/docs.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+                               <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-default navbar-static-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../">Manta Bootstrap</a>
+        </div>
+        <div class="navbar-collapse navbar-main-collapse collapse" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../getting-started">Getting started</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Library<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../css">CSS</a>
+                </li>
+                <li>
+                  <a href="../components">Bootstrap Components</a>
+                </li>
+                <li>
+                  <a href="../manta-components">Manta Components</a>
+                </li>
+                <li>
+                  <a href="../javascript">JavaScript</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../customize">Customize</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content">
+      <div class="container">
+        <h1>Manta Components</h1>
+        <p>This is where custom Manta components should go. For the most part we should be able to use standard components. If we can't, hopefully we can create new components here that use the bootstrap variables and mostly just compose new components from existing ones.</p>
+        
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <div class="bs-docs-section">
+  <div class="page-header">
+    <h1 id="components">Components</h1>
+  </div>
+  <h3 id="inline-delete">Inline Delete Confirmation</h3>
+  <p>This element is simply a re-purposed carousel used as means of prompting the user to confirm deletion of an object.</p>
+  <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-interval='false'>
+    <!-- Carousel items -->
+  
+    <form role="form">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email Address</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter an email">
+      </div>
+      <div class="carousel-inner">
+        <div class="active item alert">
+          <button class="btn btn-primary">Save Changes</button>
+          <button class="btn btn-link">Cancel</button>
+          <a href="#myCarousel" class="btn btn-link" data-slide="next">Delete</a>
+        </div>
+        <div class="item alert alert-block alert-danger">Delete this contact?
+        <button class="btn btn-danger" value="delete" name="delete">Delete</button>
+        <a href="#myCarousel" class="btn btn-default" data-slide="prev">Cancel</a>
+      </div>
+      </div>
+    </form>
+    </div>
+  </div>
+  <p>The biggest changes here entail ditching the nav dots and the left/right navigation controls and binding the next/previous slide commands to  the Delete and Cancel buttons within the carousel. 
+    <div>
+    <pre><code class='html'>&lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;active item alert&quot;&gt;
+      &lt;button class=&quot;btn btn-primary&quot;&gt;Save Changes&lt;/button&gt;
+      &lt;button class=&quot;btn btn-link&quot;&gt;Cancel&lt;/button&gt;
+      &lt;a href=&quot;#myCarousel&quot; class=&quot;btn btn-link&quot; data-slide=&quot;next&quot;&gt;Delete&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item alert alert-block alert-danger&quot;&gt;Delete this contact?
+      &lt;button class=&quot;btn btn-danger&quot; value=&quot;delete&quot; name=&quot;delete&quot;&gt;Delete&lt;/button&gt;
+      &lt;a href=&quot;#myCarousel&quot; class=&quot;btn btn-default&quot; data-slide=&quot;prev&quot;&gt;Cancel&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  </div>
+
+</div>
+
+<div class="bs-docs-section">
+  <div class="page-header">
+    <h1 id="helpers">Helpers</h1>
+  </div>
+  <h3 id="ellipsis-overflow">.ellipsis</h3>
+  <p>Add text-overflow ellipsis to any element you need to truncate.</p>
+  <div class="bs-example">
+    <span class='ellipsis' style='max-width: 300px'>This text will be truncated at 300px. Lorem ibsum</span>
+  </div>
+  <p>Just add the ellipsis class to an element. Make sure you set the max-width to tell it when to start truncating.</p>
+    <div>
+    <pre><code class='html'>&lt;span class='ellipsis' style='max-width: 300px'&gt;This text will be truncated at 300px. Lorem ibsum&lt;/span&gt;</code></pre>
+  </div>
+
+</div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav">
+              
+            </ul>
+            <a class="back-to-top" href="#top">
+              Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+    </li>
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+    </li>
+    <li class="follow-btn">
+      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
+    </li>
+  </ul>
+</div>
+
+
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <ul class="bs-docs-footer-links muted">
+      <li>Currently v3.1.1</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/mantacode/bootstrap">GitHub</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
+      <li><a href="../2.3.2/">v2.3.2 docs</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.getbootstrap.com">Expo</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/mantacode/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/mantacode/bootstrap/releases">Releases</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/docs.min.js"></script>
+
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+
+<!-- Analytics
+================================================== -->
+<script>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+  </body>
+</html>
