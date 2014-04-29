@@ -3,40 +3,40 @@
 // --------------------------------------------------
 
 // Manta Color Pallette
-@warmLightest    : #fdf9ee;
-@warmLighter     : #fff2c5;
-@warmMidlight    : #fdd900;
-@warmMiddark     : #ffb60f;
-@warmDark        : #f99a00;
-@warmDarker      : #b67801;
 
-@coolLightest    : #cfe4ee;
-@coolLighter     : #aad1e4;
-@coolLight       : #83bdcc;
-@coolMidlight    : #5ea9d2;
-@coolMiddark     : #3a94c6;
-@coolDark        : #1b7fb7;
-@coolDarker      : #006ba5;
-@coolDarkest     : #00476d;
+@coolBase:      #098D9E;//blueish
+@coolBase:      #099E09;//green
+@coolBase:      #c22b20;//red
+@coolBase:      #CAD647;//baby poop
+@coolBase:      #EB2AE7;//princess
+@coolBase:      #3a94c6;//manta
+@coolLightest:  spin(lighten(@coolBase,36%),4); //#cfe4ee
+@coolMidlight:  spin(lighten(@coolBase,10%),-1); //#5ea9d2
+@coolMiddark:   @coolBase;
+@coolDark:      spin(saturate(darken(@coolBase,9.5%),29%),2); //#1b7fb7
+@coolDarker:    darken(@coolDark,5.2%); //#006ba5
+@coolDarkest:   darken(@coolDarker, 12%); //#00476d
+
+@warmBase:      spin(saturate(@coolBase,45%),-159); //#ffb60f
+@warmLighter:   spin(lighten(@coolBase,36%),4); //#fff2c5
+@warmMiddark:   @warmBase;
+@warmDark:      spin(darken(@warmBase,4.6%),-4); //#f99a00
+
 
 @neutralWhite    : #ffffff;
-@neutralLightest : #f1f1f1;
-@neutralLighter  : #dddddd;
-@neutralLight    : #cccccc;
-@neutralMidlight : #aaaaaa;
-@neutralMiddark  : #898989;
-@neutralDarker   : #555555;
-@neutralDarkest  : #252525;
+@neutralLightest : darken(@neutralWhite,5.5%); //#f1f1f1
+@neutralLighter  : darken(@neutralWhite,13.5%); //#dddddd
+@neutralLight    : darken(@neutralWhite,20%); //#cccccc
+@neutralMidlight : darken(@neutralWhite,33.5%); //#aaaaaa
+@neutralMiddark  : darken(@neutralWhite,46.25%); //#898989
+@neutralDarker   : darken(@neutralWhite,66.5%); //#555555
+@neutralDarkest  : darken(@neutralWhite,85.5%); //#252525
 
-@naturalLightest : #e5f8dc;
-@naturalLighter  : #b9edb9;
-@naturalMidlight : #62c462;
-@naturalMiddark  : #35aa35;
-@naturalDark     : #009900;
-@naturalDarker   : #137513;
+@naturalBase     : #35aa35;
+@naturalMiddark  : @naturalBase;
 
-@errorLight      : #fad0d0;
 @errorDark       : #C7272B;
+@errorLight      : saturate(lighten(@errorDark,43%),10%);
 
 
 //== Colors
