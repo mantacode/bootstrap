@@ -11,7 +11,7 @@
 
 <title>
   
-    Manta Components &middot; Bootstrap
+    Color Palette &middot; Bootstrap
   
 </title>
 
@@ -96,8 +96,8 @@
     <!-- Docs page layout -->
     <div class="bs-docs-header bg-brand-primary" id="content">
       <div class="container">
-        <h1>Manta Components</h1>
-        <p>This is where custom Manta components should go. For the most part we should be able to use standard components. If we can't, hopefully we can create new components here that use the bootstrap variables and mostly just compose new components from existing ones.</p>
+        <h1>Color Palette</h1>
+        <p>Here are the colors used within our bootstrap library.</p>
         
       </div>
     </div>
@@ -108,79 +108,136 @@
         <div class="col-md-9" role="main">
           <div class="bs-docs-section">
   <div class="page-header">
-    <h1 id="components">Components</h1>
+    <h1 id="cools">Cools</h1>
   </div>
-  <h3 id="inline-delete">Inline Delete Confirmation</h3>
-  <p>This element is simply a re-purposed carousel used as means of prompting the user to confirm deletion of an object.</p>
-  <div class="bs-example">
-    <div id="myCarousel" class="carousel slide" data-interval='false'>
-    <!-- Carousel items -->
-  
-    <form role="form">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your name">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Email Address</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter an email">
-      </div>
-      <div class="carousel-inner">
-        <div class="active item alert">
-          <button class="btn btn-primary">Save Changes</button>
-          <button class="btn btn-link">Cancel</button>
-          <a href="#myCarousel" class="btn btn-link" data-slide="next">Delete</a>
-        </div>
-        <div class="item alert alert-block alert-danger">Delete this contact?
-        <button class="btn btn-danger" value="delete" name="delete">Delete</button>
-        <a href="#myCarousel" class="btn btn-default" data-slide="prev">Cancel</a>
-      </div>
-      </div>
-    </form>
+  <div class="row swatches">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>lightest</h3>
+      <div class="swatch bg-cool-lightest"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>lighter</h3>
+      <div class="swatch bg-cool-lighter"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>midlight</h3>
+      <div class="swatch bg-cool-midlight"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>middark</h3>
+      <div class="swatch bg-cool-middark"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>dark</h3>
+      <div class="swatch bg-cool-dark"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>darker</h3>
+      <div class="swatch bg-cool-darker"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>darkest <small class="text-default">primary</small></h3>
+      <div class="swatch bg-cool-darkest"></div>
     </div>
   </div>
-  <p>The biggest changes here entail ditching the nav dots and the left/right navigation controls and binding the next/previous slide commands to  the Delete and Cancel buttons within the carousel. 
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;carousel-inner&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;active item alert&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Save Changes<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#myCarousel&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span> <span class="na">data-slide=</span><span class="s">&quot;next&quot;</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;item alert alert-block alert-danger&quot;</span><span class="nt">&gt;</span>Delete this contact?
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger&quot;</span> <span class="na">value=</span><span class="s">&quot;delete&quot;</span> <span class="na">name=</span><span class="s">&quot;delete&quot;</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#myCarousel&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-slide=</span><span class="s">&quot;prev&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+  <div class="page-header">
+    <h1 id="warms">Warms</h1>
+  </div>
+  <div class="row swatches">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>lighter</h3>
+      <div class="swatch bg-warm-lighter"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>midlight <small class="text-default">warning</small></h3>
+      <div class="swatch bg-warm-midlight"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>middark <small class="text-default">info</small></h3>
+      <div class="swatch bg-warm-middark"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>dark</h3>
+      <div class="swatch bg-warm-dark"></div>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 id="naturals">Naturals</h1>
+  </div>
+  <div class="row swatches">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>middark <small class="text-default">success</small></h3>
+      <div class="swatch bg-natural-middark"></div>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 id="neutrals">Neutrals</h1>
+  </div>
+  <div class="row swatches">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>white</h3>
+      <div class="swatch bg-neutral-white"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>lightest</h3>
+      <div class="swatch bg-neutral-lightest"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>lighter</h3>
+      <div class="swatch bg-neutral-lighter"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>light</h3>
+      <div class="swatch bg-neutral-light"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>midlight</h3>
+      <div class="swatch bg-neutral-midlight"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>middark</h3>
+      <div class="swatch bg-neutral-middark"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>darker</h3>
+      <div class="swatch bg-neutral-darker"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>darkest</h3>
+      <div class="swatch bg-neutral-darkest"></div>
+    </div>
+  </div>
+    
+  <div class="page-header">
+    <h1 id="errors">Errors</h1>
+  </div>
+  <div class="row swatches">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>light</h3>
+      <div class="swatch bg-error-light"></div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <h3>dark <small class="text-default">danger</small></h3>
+      <div class="swatch bg-error-dark"></div>
+    </div>
+  </div>
+
 </div>
 
-<div class="bs-docs-section">
-  <div class="page-header">
-    <h1 id="helpers">Helpers</h1>
-  </div>
-  <h3 id="ellipsis-overflow">.ellipsis</h3>
-  <p>Add text-overflow ellipsis to any element you need to truncate.</p>
-  <div class="bs-example">
-    <span class='ellipsis' style='max-width: 300px'>This text will be truncated at 300px. Lorem ibsum</span>
-  </div>
-  <p>Just add the ellipsis class to an element. Make sure you set the max-width to tell it when to start truncating.</p>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;ellipsis&#39;</span> <span class="na">style=</span><span class="s">&#39;max-width: 300px&#39;</span><span class="nt">&gt;</span>This text will be truncated at 300px. Lorem ibsum<span class="nt">&lt;/span&gt;</span></code></pre></div>
-</div>
 
         </div>
         <div class="col-md-3">
           <div class="bs-docs-sidebar hidden-print" role="complementary">
             <ul class="nav bs-docs-sidenav">
               
-                <li>
-  <a href="#components">Components</a>
-  <ul class="nav">
-    <li><a href="#inline-delete">Inline Delete Confirmation</a></li>
-  </ul>
-  <a href="#helpers">Helpers</a>
-  <ul class="nav">
-    <li><a href="#ellipsis-overflow">Ellipsis Overflow</a></li>
-  </ul>
-</li>
+                <li><a href="#cools">Cools</a></li>
+<li><a href="#warms">Warms</a></li>
+<li><a href="#naturals">Naturals</a></li>
+<li><a href="#neutrals">Neutrals</a></li>
+<li><a href="#errors">Errors</a></li>
 
               
             </ul>
@@ -272,6 +329,27 @@ $('#theme2015-toggle,#theme2015-label').click(function () {
 <script>
 var afterThemeChange = function() {};
 </script>
+
+  <script>
+  function rgb2hex(rgb){
+   if(!rgb) {
+     return '';
+   }
+   rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+   return "#" +
+    ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+    ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+    ("0" + parseInt(rgb[3],10).toString(16)).slice(-2);
+  }
+  afterThemeChange = function() {
+    $('.swatch-hex').remove();
+    $(".swatch").each(function() {
+      var hex = rgb2hex($(this).css('background-color'));
+      $('<div class="swatch-hex text-muted">').text(hex).insertAfter($(this));
+    });
+  };
+  $(afterThemeChange);
+  </script>
 
 
 

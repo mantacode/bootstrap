@@ -16,7 +16,7 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="../dist/css/bootstrap-manta.min.css" rel="stylesheet">
+<link href="../dist/css/bootstrap-manta.min.css" rel="stylesheet" id="main-css">
 
 <!-- Documentation extras -->
 <link href="../assets/css/docs.css" rel="stylesheet">
@@ -61,6 +61,9 @@
                   <a href="../css">CSS</a>
                 </li>
                 <li>
+                  <a href="../color-palette">Color Palette</a>
+                </li>
+                <li>
                   <a href="../components">Bootstrap Components</a>
                 </li>
                 <li>
@@ -75,13 +78,23 @@
               <a href="../customize">Customize</a>
             </li>
           </ul>
+          <ul class="nav navbar-nav navbar-right navbar-fixed-bottom">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary" id="theme2014-label">
+                <input type="radio" name="options" id="theme2014-toggle"> 2014
+              </label>
+              <label class="btn btn-primary" id="theme2015-label">
+                <input type="radio" name="options" id="theme2015-toggle"> 2015
+              </label>
+            </div>
+          </ul>
         </div>
     </div>
 </header>
 
 
     <!-- Docs page layout -->
-    <div class="bs-docs-header" id="content">
+    <div class="bs-docs-header bg-brand-primary" id="content">
       <div class="container">
         <h1>Customize and download</h1>
         <p>Customize Bootstrap's components, Less variables, and jQuery plugins to get your very own version.</p>
@@ -434,6 +447,26 @@
 <p>Gray and brand colors for use across Bootstrap.</p>
 <div class="row">
   <div class="bs-customizer-input">
+    <label for="input-@gray-darker">@gray-darker</label>
+    <input id="input-@gray-darker" type="text" value="@neutralDarkest" data-var="@gray-darker" class="form-control"/>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@gray-dark">@gray-dark</label>
+    <input id="input-@gray-dark" type="text" value="@neutralDarker" data-var="@gray-dark" class="form-control"/>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@gray">@gray</label>
+    <input id="input-@gray" type="text" value="@neutralMiddark" data-var="@gray" class="form-control"/>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@gray-light">@gray-light</label>
+    <input id="input-@gray-light" type="text" value="@neutralMidlight" data-var="@gray-light" class="form-control"/>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@gray-lighter">@gray-lighter</label>
+    <input id="input-@gray-lighter" type="text" value="@neutralLighter" data-var="@gray-lighter" class="form-control"/>
+  </div>
+  <div class="bs-customizer-input">
     <label for="input-@brand-primary">@brand-primary</label>
     <input id="input-@brand-primary" type="text" value="@coolDarkest" data-var="@brand-primary" class="form-control"/>
   </div>
@@ -443,7 +476,7 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@brand-warning">@brand-warning</label>
-    <input id="input-@brand-warning" type="text" value="@errorLight" data-var="@brand-warning" class="form-control"/>
+    <input id="input-@brand-warning" type="text" value="@warmMidlight" data-var="@brand-warning" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@brand-danger">@brand-danger</label>
@@ -614,11 +647,11 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@border-radius-base">@border-radius-base</label>
-    <input id="input-@border-radius-base" type="text" value="5px" data-var="@border-radius-base" class="form-control"/>
+    <input id="input-@border-radius-base" type="text" value="3px" data-var="@border-radius-base" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@border-radius-large">@border-radius-large</label>
-    <input id="input-@border-radius-large" type="text" value="8px" data-var="@border-radius-large" class="form-control"/>
+    <input id="input-@border-radius-large" type="text" value="3px" data-var="@border-radius-large" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@border-radius-small">@border-radius-small</label>
@@ -1536,7 +1569,7 @@
 <div class="row">
   <div class="bs-customizer-input">
     <label for="input-@modal-inner-padding">@modal-inner-padding</label>
-    <input id="input-@modal-inner-padding" type="text" value="20px" data-var="@modal-inner-padding" class="form-control"/>
+    <input id="input-@modal-inner-padding" type="text" value="15px" data-var="@modal-inner-padding" class="form-control"/>
     <p class="help-block">Padding applied to the modal body</p>
   </div>
   <div class="bs-customizer-input">
@@ -1603,10 +1636,6 @@
   <div class="bs-customizer-input">
     <label for="input-@alert-padding">@alert-padding</label>
     <input id="input-@alert-padding" type="text" value="15px" data-var="@alert-padding" class="form-control"/>
-  </div>
-  <div class="bs-customizer-input">
-    <label for="input-@alert-border-radius">@alert-border-radius</label>
-    <input id="input-@alert-border-radius" type="text" value="@border-radius-base" data-var="@alert-border-radius" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@alert-link-font-weight">@alert-link-font-weight</label>
@@ -1817,15 +1846,15 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@panel-warning-text">@panel-warning-text</label>
-    <input id="input-@panel-warning-text" type="text" value="@state-warning-text" data-var="@panel-warning-text" class="form-control"/>
+    <input id="input-@panel-warning-text" type="text" value="@neutralWhite" data-var="@panel-warning-text" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@panel-warning-border">@panel-warning-border</label>
-    <input id="input-@panel-warning-border" type="text" value="@state-warning-border" data-var="@panel-warning-border" class="form-control"/>
+    <input id="input-@panel-warning-border" type="text" value="@warmDark" data-var="@panel-warning-border" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@panel-warning-heading-bg">@panel-warning-heading-bg</label>
-    <input id="input-@panel-warning-heading-bg" type="text" value="@state-warning-bg" data-var="@panel-warning-heading-bg" class="form-control"/>
+    <input id="input-@panel-warning-heading-bg" type="text" value="@warmDark" data-var="@panel-warning-heading-bg" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@panel-danger-text">@panel-danger-text</label>
@@ -2197,7 +2226,7 @@
     <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.1.1</li>
+      <li>Currently v3.1.1-m5</li>
       <li>&middot;</li>
       <li><a href="https://github.com/mantacode/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -2224,8 +2253,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/docs.min.js"></script>
+<script>
+var cssBase = '../dist/css/bootstrap-manta';
+var cssSuffix = '.min.css';
+$('#main-css').load(function() {
+  console.log('loaded CSS');
+});
+var timer = false;
+function setTheme(theme) {
+  var cssTheme = '';
+  $('#main-css').attr('href', cssBase+theme+cssSuffix);
+  if(timer) {
+    clearTimeout(timer);
+  }
+  timer = setTimeout(afterThemeChange, 1000);
+}
+$('#theme2014-toggle,#theme2014-label').click(function () {
+  setTheme('');
+});
+$('#theme2015-toggle,#theme2015-label').click(function () {
+  setTheme('2015');
+});
+</script>
 
 <script src="../assets/js/customize.min.js"></script>
+
+<script>
+var afterThemeChange = function() {};
+</script>
 
 
 
@@ -2238,20 +2293,6 @@
   }(document, "script", "twitter-wjs"));
 </script>
 
-<!-- Analytics
-================================================== -->
-<script>
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
 
   </body>
 </html>
