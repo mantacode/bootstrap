@@ -16,7 +16,7 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="../dist/css/bootstrap-manta.min.css" rel="stylesheet" id="main-css">
+<link href="../dist/css/bootstrap-manta2015.min.css" rel="stylesheet" id="main-css">
 
 <!-- Documentation extras -->
 <link href="../assets/css/docs.css" rel="stylesheet">
@@ -77,16 +77,6 @@
             <li>
               <a href="../customize">Customize</a>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right navbar-fixed-bottom">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary" id="theme2014-label">
-                <input type="radio" name="options" id="theme2014-toggle"> 2014
-              </label>
-              <label class="btn btn-primary" id="theme2015-label">
-                <input type="radio" name="options" id="theme2015-toggle"> 2015
-              </label>
-            </div>
           </ul>
         </div>
     </div>
@@ -4492,7 +4482,7 @@
     <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.1.1-m5</li>
+      <li>Currently v3.1.1-m6</li>
       <li>&middot;</li>
       <li><a href="https://github.com/mantacode/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -4519,32 +4509,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/docs.min.js"></script>
-<script>
-var cssBase = '../dist/css/bootstrap-manta';
-var cssSuffix = '.min.css';
-$('#main-css').load(function() {
-  console.log('loaded CSS');
-});
-var timer = false;
-function setTheme(theme) {
-  var cssTheme = '';
-  $('#main-css').attr('href', cssBase+theme+cssSuffix);
-  if(timer) {
-    clearTimeout(timer);
-  }
-  timer = setTimeout(afterThemeChange, 1000);
-}
-$('#theme2014-toggle,#theme2014-label').click(function () {
-  setTheme('');
-});
-$('#theme2015-toggle,#theme2015-label').click(function () {
-  setTheme('2015');
-});
-</script>
 
-<script>
-var afterThemeChange = function() {};
-</script>
+
 
 
 

@@ -16,7 +16,7 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="../dist/css/bootstrap-manta.min.css" rel="stylesheet" id="main-css">
+<link href="../dist/css/bootstrap-manta2015.min.css" rel="stylesheet" id="main-css">
 
 <!-- Documentation extras -->
 <link href="../assets/css/docs.css" rel="stylesheet">
@@ -77,16 +77,6 @@
             <li>
               <a href="../customize">Customize</a>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right navbar-fixed-bottom">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary" id="theme2014-label">
-                <input type="radio" name="options" id="theme2014-toggle"> 2014
-              </label>
-              <label class="btn btn-primary" id="theme2015-label">
-                <input type="radio" name="options" id="theme2015-toggle"> 2015
-              </label>
-            </div>
           </ul>
         </div>
     </div>
@@ -2113,9 +2103,11 @@
 <div class="bs-docs-section">
   <h1 id="buttons" class="page-header">Buttons</h1>
 
-  <h2 id="buttons-options">Options</h2>
+  <h2 id="buttons-options">Options (and states)</h2>
   <p>Use any of the available button classes to quickly create a styled button.</p>
   <div class="bs-example">
+   <p>
+    <h4>default state</h4>
     <button type="button" class="btn btn-default">Default</button>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-success">Success</button>
@@ -2123,7 +2115,29 @@
     <button type="button" class="btn btn-warning">Warning</button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-link">Link</button>
+   </p>
+   <p>
+    <h4>hover state</h4>
+    <button type="button" class="btn btn-default hover">Default</button>
+    <button type="button" class="btn btn-primary hover">Primary</button>
+    <button type="button" class="btn btn-success hover">Success</button>
+    <button type="button" class="btn btn-info hover">Info</button>
+    <button type="button" class="btn btn-warning hover">Warning</button>
+    <button type="button" class="btn btn-danger hover">Danger</button>
+    <button type="button" class="btn btn-link hover">Link</button>
+   </p>
+   <p>
+    <h4>disabled state</h4>
+    <button type="button" class="btn btn-default disabled">Default</button>
+    <button type="button" class="btn btn-primary disabled">Primary</button>
+    <button type="button" class="btn btn-success disabled">Success</button>
+    <button type="button" class="btn btn-info disabled">Info</button>
+    <button type="button" class="btn btn-warning disabled">Warning</button>
+    <button type="button" class="btn btn-danger disabled">Danger</button>
+    <button type="button" class="btn btn-link disabled">Link</button>
+   </p>
   </div>
+
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard button --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
 
@@ -3373,7 +3387,7 @@
     <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.1.1-m5</li>
+      <li>Currently v3.1.1-m6</li>
       <li>&middot;</li>
       <li><a href="https://github.com/mantacode/bootstrap">GitHub</a></li>
       <li>&middot;</li>
@@ -3400,32 +3414,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/docs.min.js"></script>
-<script>
-var cssBase = '../dist/css/bootstrap-manta';
-var cssSuffix = '.min.css';
-$('#main-css').load(function() {
-  console.log('loaded CSS');
-});
-var timer = false;
-function setTheme(theme) {
-  var cssTheme = '';
-  $('#main-css').attr('href', cssBase+theme+cssSuffix);
-  if(timer) {
-    clearTimeout(timer);
-  }
-  timer = setTimeout(afterThemeChange, 1000);
-}
-$('#theme2014-toggle,#theme2014-label').click(function () {
-  setTheme('');
-});
-$('#theme2015-toggle,#theme2015-label').click(function () {
-  setTheme('2015');
-});
-</script>
 
-<script>
-var afterThemeChange = function() {};
-</script>
+
 
 
 
