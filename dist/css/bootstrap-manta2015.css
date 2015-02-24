@@ -6697,8 +6697,8 @@ ul.nav li.dropdown:hover > .dropdown-onhover {
   font-style: normal;
   font-weight: normal;
 
-  src: url('../fonts/icomanta.eot?v=4');
-  src: url('../fonts/icomanta.eot?v=4#iefix') format('embedded-opentype'), url('../fonts/icomanta.woff?v=4') format('woff'), url('../fonts/icomanta.ttf?v=4') format('truetype'), url('../fonts/icomanta.svg?v=4#icomanta') format('svg');
+  src: url('../fonts/icomanta.eot?v=5');
+  src: url('../fonts/icomanta.eot?v=5#iefix') format('embedded-opentype'), url('../fonts/icomanta.woff?v=5') format('woff'), url('../fonts/icomanta.ttf?v=5') format('truetype'), url('../fonts/icomanta.svg?v=5#icomanta') format('svg');
 }
 @font-face {
   font-family: 'vegurlight';
