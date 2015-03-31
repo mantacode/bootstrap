@@ -25,13 +25,13 @@ sass_repo:        https://github.com/mantacode/bootstrap-sass
 
 download:
   source:         https://github.com/mantacode/bootstrap/archive/v3.1.1-m10.zip
-  dist:           https://github.com/mantacode/bootstrap/releases/download/v3.1.1-m10/bootstrap-3.1.1-m9-dist.zip
+  dist:           https://github.com/mantacode/bootstrap/releases/download/v3.1.1-m10/bootstrap-3.1.1-m10-dist.zip
   sass:           https://github.com/mantacode/bootstrap-sass/archive/v3.1.1-m10.tar.gz
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com
 
 cdn:
-  css:            //netdna.bootstrapcdn.com/bootstrap/3.1.1-m9/css/bootstrap.min.css
-  css_theme:      //netdna.bootstrapcdn.com/bootstrap/3.1.1-m9/css/bootstrap-theme.min.css
-  js:             //netdna.bootstrapcdn.com/bootstrap/3.1.1-m9/js/bootstrap.min.js
+  css:            //netdna.bootstrapcdn.com/bootstrap/3.1.1-m10/css/bootstrap.min.css
+  css_theme:      //netdna.bootstrapcdn.com/bootstrap/3.1.1-m10/css/bootstrap-theme.min.css
+  js:             //netdna.bootstrapcdn.com/bootstrap/3.1.1-m10/js/bootstrap.min.js
