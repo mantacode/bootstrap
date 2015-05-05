@@ -434,7 +434,7 @@ module.exports = function (grunt) {
     var revParse = cp.spawn('git', ['rev-parse', '--abbrev-ref', 'HEAD']);    
     var branch;
     revParse.stdout.on('data', function(data) {
-      branch = data.toString();
+      branch = data.toString().trim();
     });
     revParse.on('close', function(code) {
       if (branch === 'master') {
