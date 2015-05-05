@@ -15,8 +15,10 @@ module.exports = function (grunt) {
     return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
   };
 
-  var fs = require('fs');
+  var fs = require('fs-extra');
   var path = require('path');
+  var cp = require('child_process');
+  var async = require('async');
   var generateGlyphiconsData = require('./grunt/bs-glyphicons-data-generator.js');
   var generateIcomantaData = require('./grunt/icomanta-data-generator.js');
   var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
@@ -426,4 +428,58 @@ module.exports = function (grunt) {
   // Task for updating the npm packages used by the Travis build.
   grunt.registerTask('update-shrinkwrap', ['exec:npmUpdate', 'exec:npmShrinkWrap', '_update-shrinkwrap']);
   grunt.registerTask('_update-shrinkwrap', function () { updateShrinkwrap.call(this, grunt); });
+
+  grunt.registerTask('gh-pages', 'Make gh-pages less stupid', function() {
+    var done = this.async();
+    var revParse = cp.spawn('git', ['rev-parse', '--abbrev-ref', 'HEAD']);    
+    var branch;
+    revParse.stdout.on('data', function(data) {
+      branch = data.toString();
+    });
+    revParse.on('close', function(code) {
+      if (branch === 'master') {
+        fs.readdir('_gh_pages', function(err, files) {
+          fs.copy('_gh_pages', '_gh_pages_temp', function(err) {
+            if (err) {
+              grunt.fail.fatal(err);
+            } else {
+              var br = cp.spawn('git', ['checkout', 'gh-pages']);
+              br.on('close', function(code) {
+                if (code) {
+                  grunt.fail.fatal('Could not checkout gh-pages branch', code);
+                } else {
+                  async.each(files, function(file, next) {
+                    fs.copy('_gh_pages_temp/' + file, './' + file, next);
+                  }, function(err) {
+                    if (err) {
+                      grunt.fail.fatal(err);
+                    } else {
+                      fs.remove('_gh_pages_temp', function(err) {
+                        if (err) {
+                          grunt.fail.fatal(err);
+                        } else {
+                          fs.readFile('index.html', function(err, contents) {
+                            fs.writeFile('index.html', contents.toString().replace(/\.\.\//g, ''), 'utf-8', function(err) {
+                              if (err) {
+                                grunt.fail.fatal(err);
+                              } else {
+                                done();
+                              }
+                            });
+                          });
+                        }
+                      });
+                    }
+                  });
+                }
+              });
+            }
+          });
+        });
+      } else {
+        grunt.fail.fatal('Not on master branch. Aborting');
+        done();
+      }
+    });
+  });
 };
