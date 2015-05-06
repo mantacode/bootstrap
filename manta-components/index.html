@@ -130,30 +130,149 @@
     </div>
   </div>
   <p>The biggest changes here entail ditching the nav dots and the left/right navigation controls and binding the next/previous slide commands to  the Delete and Cancel buttons within the carousel. 
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;carousel-inner&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;active item alert&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Save Changes<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#myCarousel&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span> <span class="na">data-slide=</span><span class="s">&quot;next&quot;</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;item alert alert-block alert-danger&quot;</span><span class="nt">&gt;</span>Delete this contact?
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger&quot;</span> <span class="na">value=</span><span class="s">&quot;delete&quot;</span> <span class="na">name=</span><span class="s">&quot;delete&quot;</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#myCarousel&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-slide=</span><span class="s">&quot;prev&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+    <div>
+    <pre><code class='html'>&lt;div class=&quot;carousel-inner&quot;&gt;
+  &lt;div class=&quot;active item alert&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Save Changes&lt;/button&gt;
+    &lt;button class=&quot;btn btn-link&quot;&gt;Cancel&lt;/button&gt;
+    &lt;a href=&quot;#myCarousel&quot; class=&quot;btn btn-link&quot; data-slide=&quot;next&quot;&gt;Delete&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item alert alert-block alert-danger&quot;&gt;Delete this contact?
+    &lt;button class=&quot;btn btn-danger&quot; value=&quot;delete&quot; name=&quot;delete&quot;&gt;Delete&lt;/button&gt;
+    &lt;a href=&quot;#myCarousel&quot; class=&quot;btn btn-default&quot; data-slide=&quot;prev&quot;&gt;Cancel&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+
+  <!-- Manta Dialog -->
+  <h3 id="manta-dialog" class="mtxl">Manta Dialog</h3>
+  <p>A generic bootstrap dialog with a fancy Manta header, using icon-manta (or any other icon). Add a <code>bg-*</code> class to the <code>modal-header</code> to color the header, and a heading tag (h1 through h6) with classes <code>modal-title icon-title</code> inside that for spacing.</p>
+  <div class="bs-example">
+    <button class="btn btn-primary btn-lg" type="button" data-toggle="modal" data-target="#manta-modal">Launch modal demo</button>
+    <div id="manta-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-gray-darker">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title icon-title">
+              <span class="icomanta icon-manta"></span>
+            </h2>
+          </div>
+          <div class="modal-body text-center">
+            <img src="https://s-media-cache-ak0.pinimg.com/236x/4f/f7/d9/4ff7d982acbef05310beece25dbe78b4.jpg">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary pull-right" type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div>
+    <pre><code class='html'>&lt;div id=&quot;manta-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header bg-gray-darker&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h2 class=&quot;modal-title icon-title&quot;&gt;
+          &lt;span class=&quot;icomanta icon-manta&quot;&gt;&lt;/span&gt;
+        &lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body text-center&quot;&gt;
+        &lt;img src=&quot;https://s-media-cache-ak0.pinimg.com/236x/4f/f7/d9/4ff7d982acbef05310beece25dbe78b4.jpg&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button class=&quot;btn btn-primary pull-right&quot; type=&quot;button&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+
+  <!-- Contextual Popovers -->
+  <h3 id="contextual-popovers" class="mtxl">Contextual Popovers</h3>
+  <p>Just like the normal bootstrap popovers but with contextual background classes applied. It's kind of a combination of a popover and an alert.</p>
+  <div class="bs-example">
+    <h4>With Titles</h4>
+    <div class="btn-row">
+      <button class="btn btn-primary btn-lg popover-danger" type="button" data-toggle="popover" data-placement="top" data-content="Popover with popover-danger class and a title" data-title="Popover Danger">Popover Danger</button>
+      <button class="btn btn-primary btn-lg popover-warning" type="button" data-toggle="popover" data-placement="top" data-content="Popover with popover-warning class and a title" data-title="Popover Warning">Popover Warning</button>
+      <button class="btn btn-primary btn-lg popover-info" type="button" data-toggle="popover" data-placement="top" data-content="Popover with popover-info class and a title" data-title="Popover Info">Popover Info</button>
+      <button class="btn btn-primary btn-lg popover-success" type="button" data-toggle="popover" data-placement="top" data-content="Popover with popover-success class and a title" data-title="Popover Success">Popover Success</button>
+    </div>
+    <h4 class="mtl">Without Titles</h4>
+    <div class="btn-row">
+      <button class="btn btn-primary btn-lg popover-danger" type="button" data-toggle="popover" data-placement="bottom" data-content="Popover with popover-danger class and no title">Popover Danger</button>
+      <button class="btn btn-primary btn-lg popover-warning" type="button" data-toggle="popover" data-placement="bottom" data-content="Popover with popover-warning class and no title">Popover Warning</button>
+      <button class="btn btn-primary btn-lg popover-info" type="button" data-toggle="popover" data-placement="bottom" data-content="Popover with popover-info class and no title">Popover Info</button>
+      <button class="btn btn-primary btn-lg popover-success" type="button" data-toggle="popover" data-placement="bottom" data-content="Popover with popover-success class and no title">Popover Success</button>
+    </div>
+  </div>
+
+  <h4>With Titles</h4>
+    <div>
+    <pre><code class='html'>&lt;button class=&quot;btn btn-primary btn-lg popover-danger&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Popover with popover-danger class and a title&quot; data-title=&quot;Popover Danger&quot;&gt;Popover Danger&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-lg popover-warning&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Popover with popover-warning class and a title&quot; data-title=&quot;Popover Warning&quot;&gt;Popover Warning&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-lg popover-info&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Popover with popover-info class and a title&quot; data-title=&quot;Popover Info&quot;&gt;Popover Info&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-lg popover-success&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Popover with popover-success class and a title&quot; data-title=&quot;Popover Success&quot;&gt;Popover Success&lt;/button&gt;</code></pre>
+  </div>
+
+
+  <h4>Without Titles</h4>
+    <div>
+    <pre><code class='html'>&lt;button class=&quot;btn btn-primary btn-lg popover-danger&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Popover with popover-danger class and no title&quot;&gt;Popover Danger&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-lg popover-warning&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Popover with popover-warning class and no title&quot;&gt;Popover Warning&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-lg popover-info&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Popover with popover-info class and no title&quot;&gt;Popover Info&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-lg popover-success&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Popover with popover-success class and no title&quot;&gt;Popover Success&lt;/button&gt;</code></pre>
+  </div>
+
 </div>
 
 <div class="bs-docs-section">
   <div class="page-header">
     <h1 id="helpers">Helpers</h1>
   </div>
+
   <h3 id="ellipsis-overflow">.ellipsis</h3>
   <p>Add text-overflow ellipsis to any element you need to truncate.</p>
   <div class="bs-example">
-    <span class='ellipsis' style='max-width: 300px'>This text will be truncated at 300px. Lorem ibsum</span>
+    <span class="ellipsis" style="max-width: 300px">This text will be truncated at 300px. Lorem ibsum</span>
   </div>
   <p>Just add the ellipsis class to an element. Make sure you set the max-width to tell it when to start truncating.</p>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;ellipsis&#39;</span> <span class="na">style=</span><span class="s">&#39;max-width: 300px&#39;</span><span class="nt">&gt;</span>This text will be truncated at 300px. Lorem ibsum<span class="nt">&lt;/span&gt;</span></code></pre></div>
+    <div>
+    <pre><code class='html'>&lt;span class=&quot;ellipsis&quot; style=&quot;max-width: 300px&quot;&gt;This text will be truncated at 300px. Lorem ibsum&lt;/span&gt;</code></pre>
+  </div>
+
+
+  <h3 id="btn-row">.btn-row</h3>
+  <p>You know how side-by-side bootstrap buttons never look quite right? That ends today. Just put them in a div with the <code>.btn-row</code> class.</p>
+  <div class="bs-example">
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary">First</button>
+      <button type="button" class="btn btn-success">Second</button>
+      <button type="button" class="btn btn-info">Third</button>
+      <button type="button" class="btn btn-danger">Fourth</button>
+    </div>
+  </div>
+    <div>
+    <pre><code class='html'>&lt;div class=&quot;btn-row&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;First&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Second&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Third&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Fourth&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
 </div>
 
         </div>
@@ -209,7 +328,7 @@
     <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.1.1-m9</li>
+      <li>Currently v3.1.1.11</li>
       <li>&middot;</li>
       <li><a href="https://github.com/mantacode/bootstrap">GitHub</a></li>
       <li>&middot;</li>
