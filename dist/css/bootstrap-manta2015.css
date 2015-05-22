@@ -6855,6 +6855,65 @@ ul.nav li.dropdown:hover > .dropdown-onhover {
 fieldset[disabled] .btn {
   color: #e0e0e0;
 }
+.btn-brand {
+  color: #ffffff;
+  background-color: #bb4924;
+  border-color: #a64120;
+}
+.btn-brand:hover,
+.btn-brand.hover,
+.btn-brand:focus,
+.btn-brand:active,
+.btn-brand.active,
+.open .dropdown-toggle.btn-brand {
+  color: #ffffff;
+  background-color: #993c1d;
+  border-color: #722d16;
+}
+.btn-brand:active,
+.btn-brand.active,
+.open .dropdown-toggle.btn-brand {
+  background-image: none;
+}
+.btn-brand.disabled,
+.btn-brand[disabled],
+fieldset[disabled] .btn-brand,
+.btn-brand.disabled:hover,
+.btn-brand[disabled]:hover,
+fieldset[disabled] .btn-brand:hover,
+.btn-brand.disabled.hover,
+.btn-brand[disabled].hover,
+fieldset[disabled] .btn-brand.hover,
+.btn-brand.disabled:focus,
+.btn-brand[disabled]:focus,
+fieldset[disabled] .btn-brand:focus,
+.btn-brand.disabled:active,
+.btn-brand[disabled]:active,
+fieldset[disabled] .btn-brand:active,
+.btn-brand.disabled.active,
+.btn-brand[disabled].active,
+fieldset[disabled] .btn-brand.active {
+  background-color: #bb4924;
+  border-color: #a64120;
+}
+.btn-brand .badge {
+  color: #bb4924;
+  background-color: #ffffff;
+}
+.opaque {
+  opacity: 1;
+}
+.opaque.btn.disabled,
+.opaque.btn[disabled],
+fieldset[disabled] .opaque {
+  opacity: 1;
+}
+.opaque.btn {
+  color: #ffffff;
+}
+.opaque.btn-default {
+  color: #5b5b5b;
+}
 h1.modal-title.icon-title,
 .h1.modal-title.icon-title {
   margin-top: -10px;
