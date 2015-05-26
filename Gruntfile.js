@@ -431,7 +431,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('gh-pages', 'Make gh-pages less stupid', function() {
     var done = this.async();
-    var revParse = cp.spawn('git', ['rev-parse', '--abbrev-ref', 'HEAD']);    
+    var revParse = cp.spawn('git', ['rev-parse', '--abbrev-ref', 'HEAD']);
     var branch;
     revParse.stdout.on('data', function(data) {
       branch = data.toString().trim();
