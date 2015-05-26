@@ -539,6 +539,27 @@ ul.nav li.dropdown:hover > .dropdown-onhover {
   }
 }
 
+// Danger and error appear as red
+.btn-brand {
+  .button-variant(@btn-brand-color, @btn-brand-bg, @btn-brand-border);
+}
+
+// Don't change opacity on disabled button
+.opaque {
+  opacity: 1;
+  &.btn.disabled,
+  &.btn[disabled],
+  fieldset[disabled] & {
+    opacity: 1;
+  }
+  &.btn {
+    color: @white;
+  }
+  &.btn-default {
+    color: @gray-dark
+  }
+}
+
 .with-icon(@top, @bottom) {
   margin-top: @top;
   margin-bottom: @bottom;
