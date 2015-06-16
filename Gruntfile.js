@@ -426,7 +426,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-docs', 'copy:docs');
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy:fonts', 'dist-js', 'dist-docs']);
+  grunt.registerTask('dist', ['clean', 'webfont:icons', 'dist-css', 'copy:fonts', 'dist-js', 'dist-docs']);
 
   // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data', 'build-icomanta-data', 'build-customizer', 'update-shrinkwrap']);
