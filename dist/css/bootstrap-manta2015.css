@@ -6035,225 +6035,227 @@ s,m,l,xl,n = small(5px),medium(10px),large(20px),xlarge(30px),none(0)
   text-transform: none;
 
   speak: none;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-automotive:before {
+.icon-add:before {
   content: "\e600";
 }
-.icon-bars:before {
+.icon-arrow-connector:before {
   content: "\e601";
 }
-.icon-beauty:before {
+.icon-arrow-down:before {
   content: "\e602";
 }
-.icon-camera:before {
+.icon-arrow-left:before {
   content: "\e603";
 }
-.icon-delete:before {
+.icon-arrow-right:before {
   content: "\e604";
 }
-.icon-company:before {
+.icon-arrow-up:before {
   content: "\e605";
 }
-.icon-contractors:before {
+.icon-arrowExt-down:before {
   content: "\e606";
 }
-.icon-daycare:before {
+.icon-arrowExt-left:before {
   content: "\e607";
 }
-.icon-dentists:before {
+.icon-arrowExt-right:before {
   content: "\e608";
 }
-.icon-doctors:before {
+.icon-arrowExt-up:before {
   content: "\e609";
 }
-.icon-fitness:before {
+.icon-automotive:before {
   content: "\e60a";
 }
-.icon-legal:before {
+.icon-bars:before {
   content: "\e60b";
 }
-.icon-location:before {
+.icon-beauty:before {
   content: "\e60c";
 }
-.icon-lodging:before {
+.icon-box-checked:before {
   content: "\e60d";
 }
-.icon-marketing:before {
+.icon-box-unchecked:before {
   content: "\e60e";
 }
-.icon-messages:before {
+.icon-browse:before {
   content: "\e60f";
 }
-.icon-realestate:before {
+.icon-bulb-manta:before {
   content: "\e610";
 }
-.icon-notifications:before {
+.icon-bulb-play:before {
   content: "\e611";
 }
-.icon-notifications-alt:before {
+.icon-bulb:before {
   content: "\e612";
 }
-.icon-edit:before {
+.icon-camera:before {
   content: "\e613";
 }
-.icon-settings:before {
+.icon-clock:before {
   content: "\e614";
 }
-.icon-restaurants:before {
+.icon-comment:before {
   content: "\e615";
 }
-.icon-browse:before {
+.icon-company:before {
   content: "\e616";
 }
-.icon-arrow-down:before {
+.icon-contractors:before {
   content: "\e617";
 }
-.icon-arrow-left:before {
+.icon-current-location:before {
   content: "\e618";
 }
-.icon-arrow-up:before {
+.icon-daycare:before {
   content: "\e619";
 }
-.icon-arrow-right:before {
+.icon-delete:before {
   content: "\e61a";
 }
-.icon-arrowExt-right:before {
+.icon-dentists:before {
   content: "\e61b";
 }
-.icon-arrowExt-left:before {
+.icon-doctors:before {
   content: "\e61c";
 }
-.icon-manta:before {
+.icon-double-bubble:before {
   content: "\e61d";
 }
-.icon-google-plus:before {
+.icon-edit:before {
   content: "\e61e";
 }
-.icon-linkedin:before {
+.icon-facebook-square:before {
   content: "\e61f";
 }
-.icon-twitter:before {
+.icon-facebook:before {
   content: "\e620";
 }
-.icon-arrowExt-up:before {
+.icon-fitness:before {
   content: "\e621";
 }
-.icon-arrowExt-down:before {
+.icon-galleries:before {
   content: "\e622";
 }
-.icon-print:before {
+.icon-globe:before {
   content: "\e623";
 }
-.icon-clock:before {
+.icon-google-plus-square:before {
   content: "\e624";
 }
-.icon-star:before {
+.icon-google-plus:before {
   content: "\e625";
 }
-.icon-search-results:before {
+.icon-help:before {
   content: "\e626";
 }
-.icon-map:before {
+.icon-home:before {
   content: "\e627";
 }
-.icon-products:before {
+.icon-id:before {
   content: "\e628";
 }
-.icon-call:before {
+.icon-insurance:before {
   content: "\e629";
 }
-.icon-bulb:before {
+.icon-legal:before {
   content: "\e62a";
 }
-.icon-globe:before {
+.icon-linkedin-square:before {
   content: "\e62b";
 }
-.icon-id:before {
+.icon-linkedin:before {
   content: "\e62c";
 }
-.icon-google-plus-square:before {
+.icon-location:before {
   content: "\e62d";
 }
-.icon-linkedin-square:before {
+.icon-lodging:before {
   content: "\e62e";
 }
-.icon-twitter-square:before {
+.icon-manta-logo:before {
   content: "\e62f";
 }
-.icon-comment:before {
+.icon-manta:before {
   content: "\e630";
 }
-.icon-bulb-play:before {
+.icon-map:before {
   content: "\e631";
 }
-.icon-messages-square:before {
+.icon-marketing:before {
   content: "\e632";
 }
-.icon-box-unchecked:before {
+.icon-messages-square:before {
   content: "\e633";
 }
-.icon-phone-alt:before {
+.icon-messages:before {
   content: "\e634";
 }
-.icon-help:before {
+.icon-notifications-alt:before {
   content: "\e635";
 }
-.icon-recommend:before {
+.icon-notifications:before {
   content: "\e636";
 }
-.icon-galleries:before {
+.icon-person:before {
   content: "\e637";
 }
-.icon-home:before {
+.icon-phone-alt:before {
   content: "\e638";
 }
-.icon-insurance:before {
+.icon-phone:before {
   content: "\e639";
 }
-.icon-search:before {
+.icon-print:before {
   content: "\e63a";
 }
-.icon-shopping:before {
+.icon-products:before {
   content: "\e63b";
 }
-.icon-theaters:before {
+.icon-realestate:before {
   content: "\e63c";
 }
-.icon-facebook:before {
+.icon-recommend:before {
   content: "\e63d";
 }
-.icon-facebook-square:before {
+.icon-restaurants:before {
   content: "\e63e";
 }
-.icon-box-checked:before {
+.icon-search-results:before {
   content: "\e63f";
 }
-.icon-person:before {
+.icon-search:before {
   content: "\e640";
 }
-.icon-add:before {
+.icon-settings:before {
   content: "\e641";
 }
-.icon-current-location:before {
-  content: "\e643";
-}
-.icon-arrow-connector:before {
+.icon-shopping:before {
   content: "\e642";
 }
-.icon-bulb-manta:before {
-  content: "\e644";
-}
-.icon-double-bubble:before {
-  content: "\e645";
+.icon-star:before {
+  content: "\e643";
 }
 .icon-tag:before {
+  content: "\e644";
+}
+.icon-theaters:before {
+  content: "\e645";
+}
+.icon-twitter-square:before {
   content: "\e646";
 }
-.icon-manta-logo:before {
+.icon-twitter:before {
   content: "\e647";
+}
+.icon-youtube:before {
+  content: "\e648";
 }
 .bg-brand-info,
 .bg-brand-primary,
@@ -6706,8 +6708,8 @@ ul.nav li.dropdown:hover > .dropdown-onhover {
   font-style: normal;
   font-weight: normal;
 
-  src: url('../fonts/icomanta.eot?v=5');
-  src: url('../fonts/icomanta.eot?v=5#iefix') format('embedded-opentype'), url('../fonts/icomanta.woff?v=5') format('woff'), url('../fonts/icomanta.ttf?v=5') format('truetype'), url('../fonts/icomanta.svg?v=5#icomanta') format('svg');
+  src: url('../fonts/icomanta.eot?v=6');
+  src: url('../fonts/icomanta.eot?v=6#iefix') format('embedded-opentype'), url('../fonts/icomanta.woff?v=6') format('woff'), url('../fonts/icomanta.ttf?v=6') format('truetype'), url('../fonts/icomanta.svg?v=6#icomanta') format('svg');
 }
 @font-face {
   font-family: 'vegurlight';

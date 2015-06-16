@@ -309,7 +309,8 @@ module.exports = function (grunt) {
         relaxerror: [
           'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
           'Element img is missing required attribute src.',
-          'No p element in scope but a p end tag seen.'
+          'No p element in scope but a p end tag seen.',
+          'This interface to HTML5 document checking is deprecated.'
         ]
       },
       files: {
@@ -377,6 +378,8 @@ module.exports = function (grunt) {
           hashes: false,
           types: 'eot,woff,ttf,svg',
           stylesheet: 'less',
+          startCodepoint: 0xE600,
+          htmlDemo: true,
           template: 'templates/manta.css',
           templateOptions: {
             baseClass: 'icomanta',
