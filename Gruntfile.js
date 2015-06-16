@@ -365,6 +365,24 @@ module.exports = function (grunt) {
       npmShrinkWrap: {
         command: 'npm shrinkwrap --dev'
       }
+    },
+
+    webfont: {
+      icons: {
+        src: 'icomanta_source/*.svg',
+        dest: 'fonts',
+        destCss: 'less',
+        options: {
+          font: 'icomanta',
+          types: 'eot,woff,ttf,svg',
+          stylesheet: 'less',
+          htmlDemo: false,
+          templateOptions: {
+            baseClass: 'icomanta',
+            classPrefix: 'icon-'
+          }
+        }
+      }
     }
   });
 
