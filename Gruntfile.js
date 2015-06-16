@@ -377,6 +377,7 @@ module.exports = function (grunt) {
           types: 'eot,woff,ttf,svg',
           stylesheet: 'less',
           htmlDemo: false,
+          template: 'templates/manta.less',
           templateOptions: {
             baseClass: 'icomanta',
             classPrefix: 'icon-'
