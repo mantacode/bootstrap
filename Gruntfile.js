@@ -374,9 +374,9 @@ module.exports = function (grunt) {
         destCss: 'less',
         options: {
           font: 'icomanta',
+          hashes: false,
           types: 'eot,woff,ttf,svg',
           stylesheet: 'less',
-          htmlDemo: false,
           template: 'templates/manta.css',
           templateOptions: {
             baseClass: 'icomanta',
