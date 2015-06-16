@@ -379,7 +379,7 @@ module.exports = function (grunt) {
           types: 'eot,woff,ttf,svg',
           stylesheet: 'less',
           startCodepoint: 0xE600,
-          htmlDemo: true,
+          htmlDemo: false,
           template: 'templates/manta.css',
           templateOptions: {
             baseClass: 'icomanta',
