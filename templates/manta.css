@@ -24,6 +24,6 @@
 
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
 .<%= classPrefix %><%= glyphs[glyphIdx] %>:before {
-  content: "<%= codepoints[glyphIdx] %>";
+  content: "\<%= codepoints[glyphIdx] %>";
 }
 <% } %>
