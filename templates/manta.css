@@ -1,0 +1,29 @@
+[data-icon]:before {
+  font-family: 'icomanta' !important;
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+[class*="icomanta"] {
+  font-family: 'icomanta' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+.<%= classPrefix %><%= glyphs[glyphIdx] %>:before {
+  content: "\<%= codepoints[glyphIdx] %>";
+}
+<% } %>

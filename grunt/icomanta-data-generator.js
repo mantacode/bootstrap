@@ -10,7 +10,7 @@ var fs = require('fs');
 module.exports = function generateGlyphiconsData() {
   // Pass encoding, utf8, so `readFileSync` will return a string instead of a
   // buffer
-  var glyphiconsFile = fs.readFileSync('less/manta-glyphicons.less', 'utf8');
+  var glyphiconsFile = fs.readFileSync('less/icomanta.less', 'utf8');
   var glpyhiconsLines = glyphiconsFile.split('\n');
 
   // Use any line that starts with ".glyphicon-" and capture the class name

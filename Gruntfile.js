@@ -309,7 +309,8 @@ module.exports = function (grunt) {
         relaxerror: [
           'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
           'Element img is missing required attribute src.',
-          'No p element in scope but a p end tag seen.'
+          'No p element in scope but a p end tag seen.',
+          'This interface to HTML5 document checking is deprecated.'
         ]
       },
       files: {
@@ -365,6 +366,27 @@ module.exports = function (grunt) {
       npmShrinkWrap: {
         command: 'npm shrinkwrap --dev'
       }
+    },
+
+    webfont: {
+      icons: {
+        src: 'icomanta_source/*.svg',
+        dest: 'fonts',
+        destCss: 'less',
+        options: {
+          font: 'icomanta',
+          hashes: false,
+          types: 'eot,woff,ttf,svg',
+          stylesheet: 'less',
+          startCodepoint: 0xE600,
+          htmlDemo: false,
+          template: 'templates/manta.css',
+          templateOptions: {
+            baseClass: 'icomanta',
+            classPrefix: 'icon-'
+          }
+        }
+      }
     }
   });
 
@@ -404,7 +426,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-docs', 'copy:docs');
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy:fonts', 'dist-js', 'dist-docs']);
+  grunt.registerTask('dist', ['clean', 'webfont:icons', 'dist-css', 'copy:fonts', 'dist-js', 'dist-docs']);
 
   // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data', 'build-icomanta-data', 'build-customizer', 'update-shrinkwrap']);
