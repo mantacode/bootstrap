@@ -379,6 +379,7 @@ module.exports = function (grunt) {
           types: 'eot,woff,ttf,svg',
           stylesheet: 'less',
           startCodepoint: 0xE600,
+          codepointsFile: 'templates/codepoints.json',
           htmlDemo: false,
           template: 'templates/manta.css',
           templateOptions: {
