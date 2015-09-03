@@ -171,7 +171,6 @@ module.exports = function (grunt) {
       },
       compileManta2015: {
         options: {
-          strictMath: true,
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-manta2015.css.map',
