@@ -24,9 +24,9 @@ repo:             https://github.com/mantacode/bootstrap
 sass_repo:        https://github.com/mantacode/bootstrap-sass
 
 download:
-  source:         https://github.com/mantacode/bootstrap/archive/v3.1.1-1.0.4.zip
-  dist:           https://github.com/mantacode/bootstrap/releases/download/v3.1.1-1.0.4/bootstrap-3.1.1-1.0.3-dist.zip
-  sass:           https://github.com/mantacode/bootstrap-sass/archive/v3.1.1-1.0.4.tar.gz
+  source:         https://github.com/mantacode/bootstrap/archive/v3.1.1-1.0.5.zip
+  dist:           https://github.com/mantacode/bootstrap/releases/download/v3.1.1-1.0.5/bootstrap-3.1.1-1.0.3-dist.zip
+  sass:           https://github.com/mantacode/bootstrap-sass/archive/v3.1.1-1.0.5.tar.gz
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com
