@@ -1,0 +1,110 @@
+.arrow-position(@direction, @offset) {
+  &:after, &:before {
+    @{direction}: @offset;
+  }
+}
+.arrow-setup(@inverse, @direction, @bgColor: @popover-arrow-color, @borderColor: @gray-light, @size: 10, @borderWidth: 1) {
+  background: @bgColor;
+  border: 1px solid @borderColor;
+  &:after, &:before {
+    @{inverse}: 100%;
+  }
+  &:after {
+    border-color: rgba(red(@bgColor), green(@bgColor), blue(@bgColor), 0);
+    border-@{inverse}-color: @bgColor;
+    border-width: unit(@size, px);
+    margin-@{direction}: unit(-@size, px);
+  }
+  &:before {
+    border-color: rgba(red(@borderColor), green(@borderColor), blue(@borderColor), 0);
+    border-@{inverse}-color: @borderColor;
+    margin-@{direction}: unit(-@size - @borderWidth, px);
+    border-width: unit(@size + @borderWidth, px);
+  }
+}
+.arrow-direction(@inverse, @direction, @size: 10, @borderWidth: 1) {
+  .arrow-setup(@inverse, @direction, @white, @gray-light, @size, @borderWidth);
+  &.arrow-brand {
+    .arrow-setup(@inverse, @direction, @brand, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-primary {
+    .arrow-setup(@inverse, @direction, @brand-primary, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-success {
+    .arrow-setup(@inverse, @direction, @brand-success, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-warning {
+    .arrow-setup(@inverse, @direction, @brand-warning, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-danger {
+    .arrow-setup(@inverse, @direction, @brand-danger, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-info {
+    .arrow-setup(@inverse, @direction, @brand-info, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-brand-alt {
+    .arrow-setup(@inverse, @direction, @brand-alt, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-gray {
+    .arrow-setup(@inverse, @direction, @gray, @gray-lighter, @size, @borderWidth);
+  }
+  &.arrow-gray-light {
+    .arrow-setup(@inverse, @direction, @gray-light, @gray-lighter, @size, @borderWidth);
+  }
+  &.arrow-gray-lighter {
+    .arrow-setup(@inverse, @direction, @gray-lighter, @gray-dark, @size, @borderWidth);
+  }
+  &.arrow-gray-dark {
+    .arrow-setup(@inverse, @direction, @gray-dark, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-gray-darker {
+    .arrow-setup(@inverse, @direction, @gray-darker, @gray-light, @size, @borderWidth);
+  }
+  &.arrow-white {
+    .arrow-setup(@inverse, @direction, @white, @gray-light, @size, @borderWidth);
+  }
+}
+.arrow-size(@inverse, @direction) {
+  .arrow-direction(@inverse, @direction);
+  &.arrow-small {
+    .arrow-direction(@inverse, @direction, 5);
+  }
+  &.arrow-large {
+    .arrow-direction(@inverse, @direction, 15);
+  }
+}
+.arrow {
+  position: relative;
+  &:after, &:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &.arrow-right {
+    &:after, &:before {
+      top: 50%;
+    }
+    .arrow-size(left, top);
+  }
+  &.arrow-left {
+    &:after, &:before {
+      top: 50%;
+    }
+    .arrow-size(right, top);
+  }
+  &.arrow-bottom {
+    &:after, &:before {
+      left: 50%;
+    }
+    .arrow-size(top, left);
+  }
+  &.arrow-top {
+    &:after, &:before {
+      left: 50%;
+    }
+    .arrow-size(bottom, left);
+  }
+}
