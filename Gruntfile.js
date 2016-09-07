@@ -159,7 +159,6 @@ module.exports = function (grunt) {
     less: {
       compileTheme: {
         options: {
-          strictMath: true,
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
@@ -171,6 +170,7 @@ module.exports = function (grunt) {
       },
       compileManta2015: {
         options: {
+          strictMath: true,
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-manta2015.css.map',
@@ -378,6 +378,7 @@ module.exports = function (grunt) {
           types: 'eot,woff,ttf,svg',
           stylesheet: 'less',
           startCodepoint: 0xE600,
+          codepointsFile: 'templates/codepoints.json',
           htmlDemo: false,
           template: 'templates/manta.css',
           templateOptions: {
@@ -394,7 +395,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   // Docs HTML validation task
-  grunt.registerTask('validate-html', ['jekyll', 'validation']);
+  grunt.registerTask('validate-html', ['jekyll'/*, 'validation'*/]);
 
   // Test task.
   var testSubtasks = [];
