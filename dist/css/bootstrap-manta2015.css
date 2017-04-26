@@ -7606,11 +7606,10 @@ h1,
 h2,
 h3,
 h4,
-h5 .h1,
+.h1,
 .h2,
 .h3,
-.h4,
-.h5 {
+.h4 {
   font-family: "Source Sans Pro", arial, helvetica, clean, sans-serif;
   font-kerning: normal;
 }
@@ -8136,7 +8135,7 @@ h6.modal-title.icon-title,
 }
 .popover-warning + .popover {
   background-color: #f5ebc9;
-  color: #dab132;
+  color: #252525;
 }
 .popover-warning + .popover.top > .arrow:after {
   border-top-color: #f5ebc9;
