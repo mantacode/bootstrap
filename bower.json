@@ -1,6 +1,6 @@
 {
   "name": "manta-bootstrap",
-  "version": "3.1.1-1.0.13",
+  "version": "3.1.1-1.0.14",
   "main": [
     "./dist/css/bootstrap.css",
     "./dist/css/bootstrap-manta.css",
