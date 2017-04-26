@@ -232,6 +232,12 @@ h1.strong,h2.strong,h3.strong,h4.strong,h5.strong,h6.strong,
   font-weight: bold;
 }
 
+.light,
+h1.light,h2.light,h3.light,h4.light,h5.light,h6.light,
+.h1.light,.h2.light,.h3.light,.h4.light,.h5.light,.h6.light {
+  font-weight: lighter;
+}
+
 .list-group-item {
   margin-bottom: 0;
   border: 0;
@@ -386,12 +392,48 @@ ul.nav li.dropdown:hover > .dropdown-onhover {
        url('@{icon-font-path}@{display-font-name}.svg#Vegur-Light') format('svg');
 }
 @font-face {
-  font-family: 'SourceSansPro-Regular';
-  src: url('@{icon-font-path}@{font-family-serif-name}.eot');
-  src: url('@{icon-font-path}@{font-family-serif-name}.eot?#iefix') format('embedded-opentype'),
-       url('@{icon-font-path}@{font-family-serif-name}.woff') format('woff'),
-       url('@{icon-font-path}@{font-family-serif-name}.ttf') format('truetype');
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+  src: url('@{icon-font-path}/Source-Sans-Pro-regular.eot');
+  src: url('@{icon-font-path}/Source-Sans-Pro-regular.eot?#iefix') format('embedded-opentype'),
+       local('Source Sans Pro'),
+       local('Source-Sans-Pro-regular'),
+       url('@{icon-font-path}/Source-Sans-Pro-regular.woff2') format('woff2'),
+       url('@{icon-font-path}/Source-Sans-Pro-regular.woff') format('woff'),
+       url('@{icon-font-path}/Source-Sans-Pro-regular.ttf') format('truetype'),
+       url('@{icon-font-path}/Source-Sans-Pro-regular.svg') format('svg');
 }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  font-style: normal;
+  src: url('@{icon-font-path}/Source-Sans-Pro-700.eot');
+  src: url('@{icon-font-path}/Source-Sans-Pro-700.eot?#iefix') format('embedded-opentype'),
+       local('Source Sans Pro'),
+       local('Source-Sans-Pro-700'),
+       url('@{icon-font-path}/Source-Sans-Pro-700.woff2') format('woff2'),
+       url('@{icon-font-path}/Source-Sans-Pro-700.woff') format('woff'),
+       url('@{icon-font-path}/Source-Sans-Pro-700.ttf') format('truetype'),
+       url('@{icon-font-path}/Source-Sans-Pro-700.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  src: url('@{icon-font-path}/Source-Sans-Pro-300.eot');
+  src: url('@{icon-font-path}/Source-Sans-Pro-300.eot?#iefix') format('embedded-opentype'),
+       local('Source Sans Pro'),
+       local('Source-Sans-Pro-300'),
+       url('@{icon-font-path}/Source-Sans-Pro-300.woff2') format('woff2'),
+       url('@{icon-font-path}/Source-Sans-Pro-300.woff') format('woff'),
+       url('@{icon-font-path}/Source-Sans-Pro-300.ttf') format('truetype'),
+       url('@{icon-font-path}/Source-Sans-Pro-300.svg') format('svg');
+}
+
+
 
 
 .btn .icomanta, .btn .glyphicon {
