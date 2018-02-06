@@ -133,6 +133,17 @@
     }
   }
 }
+.text-primary {
+  &,&:hover,&:active {
+    color: @brand-primary;
+  }
+  .bg-brand-info &, .bg-brand-primary &, .bg-brand-success &, .bg-brand-warning &, .bg-brand-danger &, .bg-brand &, .bg-brand-alt &,
+  .bg-gray &, .bg-gray-dark &, .bg-gray-darker &{
+    .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6,.close {
+      color: @brand-primary;
+    }
+  }
+}
 .text-brand {
   &,&:hover,&:active {
     color: @brand;
