@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: popover.js v3.1.1-1.0.15
+ * Bootstrap: popover.js v3.1.1-1.0.16
  * http://getbootstrap.com/javascript/#popovers
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
